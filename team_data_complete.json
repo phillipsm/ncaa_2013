@@ -1,0 +1,450 @@
+{
+    "akron": {
+        "distance_from_mdl_nowhere": 909.3308404720005, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02txdf", 
+        "latitude": 41.07523, 
+        "longitude": -81.51154, 
+        "seed": 12
+    }, 
+    "albany-ny": {
+        "distance_from_mdl_nowhere": 1316.3857343179857, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02dq8f", 
+        "latitude": 42.652579, 
+        "longitude": -73.756232, 
+        "seed": 15
+    }, 
+    "arizona": {
+        "distance_from_mdl_nowhere": 991.2676016542586, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0lwyk", 
+        "latitude": 43.60392, 
+        "longitude": -116.20441, 
+        "seed": 6
+    }, 
+    "belmont": {
+        "distance_from_mdl_nowhere": 655.8836699071431, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01qdhx", 
+        "latitude": 36.166667, 
+        "longitude": -86.783333, 
+        "seed": 11
+    }, 
+    "boise-state": {
+        "distance_from_mdl_nowhere": 991.2676016542586, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0lwyk", 
+        "latitude": 43.60392, 
+        "longitude": -116.20441, 
+        "seed": 13
+    }, 
+    "bucknell": {
+        "distance_from_mdl_nowhere": 1149.7357011087415, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0qlnr", 
+        "latitude": 40.9546, 
+        "longitude": -76.8836, 
+        "seed": 11
+    }, 
+    "butler": {
+        "distance_from_mdl_nowhere": 657.8570251223255, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/03bnd9", 
+        "latitude": 39.820606, 
+        "longitude": -86.170089, 
+        "seed": 6
+    }, 
+    "california": {
+        "distance_from_mdl_nowhere": 1298.3851160088682, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02zd460", 
+        "latitude": 37.861111, 
+        "longitude": -122.307917, 
+        "seed": 12
+    }, 
+    "cincinnati": {
+        "distance_from_mdl_nowhere": 745.3441400294082, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02ln0f", 
+        "latitude": 39.103118, 
+        "longitude": -84.51202, 
+        "seed": 10
+    }, 
+    "colorado": {
+        "distance_from_mdl_nowhere": 384.64622860183493, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01qd_r", 
+        "latitude": 40.010325, 
+        "longitude": -105.288973, 
+        "seed": 10
+    }, 
+    "colorado-state": {
+        "distance_from_mdl_nowhere": 384.92223233482775, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02d_zc", 
+        "latitude": 40.5748361111, 
+        "longitude": -105.080977778, 
+        "seed": 8
+    }, 
+    "creighton": {
+        "distance_from_mdl_nowhere": 226.86925165687973, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/037njl", 
+        "latitude": 41.264767, 
+        "longitude": -95.946916, 
+        "seed": 7
+    }, 
+    "davidson": {
+        "distance_from_mdl_nowhere": 986.9606414437362, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02pdhz", 
+        "latitude": 35.49999, 
+        "longitude": -80.8453, 
+        "seed": 14
+    }, 
+    "duke": {
+        "distance_from_mdl_nowhere": 1082.1655624372547, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0dzst", 
+        "latitude": 35.994033, 
+        "longitude": -78.898619, 
+        "seed": 2
+    }, 
+    "florida": {
+        "distance_from_mdl_nowhere": 1100.5423237769176, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0j_sncb", 
+        "latitude": 29.64833, 
+        "longitude": -82.34944, 
+        "seed": 3
+    }, 
+    "florida-gulf-coast": {
+        "distance_from_mdl_nowhere": 1273.4624828459162, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/04zjgd", 
+        "latitude": 26.4625, 
+        "longitude": -81.7729, 
+        "seed": 15
+    }, 
+    "georgetown": {
+        "distance_from_mdl_nowhere": 1144.879000605548, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0pspl", 
+        "latitude": 38.9072, 
+        "longitude": -77.0728, 
+        "seed": 2
+    }, 
+    "gonzaga": {
+        "distance_from_mdl_nowhere": 1145.4568120892236, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01b1mj", 
+        "latitude": 47.65878, 
+        "longitude": -117.426047, 
+        "seed": 1
+    }, 
+    "harvard": {
+        "distance_from_mdl_nowhere": 1448.6675920190416, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/03ksy", 
+        "latitude": 42.380327, 
+        "longitude": -71.13891, 
+        "seed": 14
+    }, 
+    "illinois": {
+        "distance_from_mdl_nowhere": 550.8245809167925, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0220q6", 
+        "latitude": 40.11661, 
+        "longitude": -88.24125, 
+        "seed": 7
+    }, 
+    "indiana": {
+        "distance_from_mdl_nowhere": 637.7308585668735, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01qrb2", 
+        "latitude": 39.171427, 
+        "longitude": -86.518602, 
+        "seed": 1
+    }, 
+    "iona": {
+        "distance_from_mdl_nowhere": 1311.3632859433405, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01smn5", 
+        "latitude": 40.92583, 
+        "longitude": -73.7875, 
+        "seed": 15
+    }, 
+    "iowa-state": {
+        "distance_from_mdl_nowhere": 345.3104498588066, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/03v6t", 
+        "latitude": 42.028866, 
+        "longitude": -93.648031, 
+        "seed": 10
+    }, 
+    "james-madison": {
+        "distance_from_mdl_nowhere": 1052.1118626690843, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0438f", 
+        "latitude": 38.431599, 
+        "longitude": -78.865158, 
+        "seed": 16
+    }, 
+    "kansas": {
+        "distance_from_mdl_nowhere": 169.56112882855862, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/015q1n", 
+        "latitude": 38.958056, 
+        "longitude": -95.247778, 
+        "seed": 1
+    }, 
+    "kansas-state": {
+        "distance_from_mdl_nowhere": 105.28158509323698, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/049dk", 
+        "latitude": 39.199804, 
+        "longitude": -96.581008, 
+        "seed": 4
+    }, 
+    "louisville": {
+        "distance_from_mdl_nowhere": 681.797037343143, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0225bv", 
+        "latitude": 38.216926, 
+        "longitude": -85.762499, 
+        "seed": 1
+    }, 
+    "marquette": {
+        "distance_from_mdl_nowhere": 627.7562022632492, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/037fqp", 
+        "latitude": 43.038902, 
+        "longitude": -87.906474, 
+        "seed": 3
+    }, 
+    "memphis": {
+        "distance_from_mdl_nowhere": 521.7216059688228, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02y9bj", 
+        "latitude": 35.124799, 
+        "longitude": -89.937585, 
+        "seed": 6
+    }, 
+    "miami-fl": {
+        "distance_from_mdl_nowhere": 1375.3234347580762, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0lyjf", 
+        "latitude": 25.721644, 
+        "longitude": -80.279267, 
+        "seed": 2
+    }, 
+    "michigan": {
+        "distance_from_mdl_nowhere": 809.7126809418133, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/07szy", 
+        "latitude": 42.27721, 
+        "longitude": -83.73818, 
+        "seed": 4
+    }, 
+    "michigan-state": {
+        "distance_from_mdl_nowhere": 781.2819844140803, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01j_cy", 
+        "latitude": 42.724783, 
+        "longitude": -84.483212, 
+        "seed": 3
+    }, 
+    "minnesota": {
+        "distance_from_mdl_nowhere": 515.9583138956648, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/025v3k", 
+        "latitude": 44.983334, 
+        "longitude": -93.26667, 
+        "seed": 11
+    }, 
+    "mississippi": {
+        "distance_from_mdl_nowhere": 568.4095699021692, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0hd7j", 
+        "latitude": 34.3663, 
+        "longitude": -89.5368, 
+        "seed": 12
+    }, 
+    "missouri": {
+        "distance_from_mdl_nowhere": 323.1866441874587, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0187nd", 
+        "latitude": 38.933139, 
+        "longitude": -92.373804, 
+        "seed": 9
+    }, 
+    "montana": {
+        "distance_from_mdl_nowhere": 977.2216745294271, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02x9cv", 
+        "latitude": 46.861557, 
+        "longitude": -113.98427, 
+        "seed": 13
+    }, 
+    "nevada-las-vegas": {
+        "distance_from_mdl_nowhere": 936.8797529992045, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01jpqb", 
+        "latitude": 36.10779, 
+        "longitude": -115.14376, 
+        "seed": 5
+    }, 
+    "new-mexico": {
+        "distance_from_mdl_nowhere": 516.1030264776866, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02482c", 
+        "latitude": 35.08389, 
+        "longitude": -106.61861, 
+        "seed": 3
+    }, 
+    "new-mexico-state": {
+        "distance_from_mdl_nowhere": 640.9261744423869, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02jztz", 
+        "latitude": 32.277755, 
+        "longitude": -106.745579, 
+        "seed": 13
+    }, 
+    "north-carolina": {
+        "distance_from_mdl_nowhere": 1075.9715076112707, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0bx8pn", 
+        "latitude": 35.9086350917, 
+        "longitude": -79.0424251556, 
+        "seed": 8
+    }, 
+    "north-carolina-at": {
+        "distance_from_mdl_nowhere": 1032.5500894245897, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02ldkf", 
+        "latitude": 36.072635, 
+        "longitude": -79.791975, 
+        "seed": 16
+    }, 
+    "north-carolina-state": {
+        "distance_from_mdl_nowhere": 1098.2751272050953, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0jkhr", 
+        "latitude": 35.785548, 
+        "longitude": -78.67157, 
+        "seed": 8
+    }, 
+    "northwestern-state": {
+        "distance_from_mdl_nowhere": 555.5326890154531, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/019tfm", 
+        "latitude": 31.75004, 
+        "longitude": -93.09639, 
+        "seed": 14
+    }, 
+    "notre-dame": {
+        "distance_from_mdl_nowhere": 675.0538178694455, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/012mzw", 
+        "latitude": 41.70767, 
+        "longitude": -86.248238, 
+        "seed": 7
+    }, 
+    "ohio-state": {
+        "distance_from_mdl_nowhere": 825.4035170849729, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/05krk", 
+        "latitude": 39.999063, 
+        "longitude": -83.017339, 
+        "seed": 2
+    }, 
+    "oklahoma": {
+        "distance_from_mdl_nowhere": 236.15569948403257, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01vs5c", 
+        "latitude": 35.208611, 
+        "longitude": -97.445833, 
+        "seed": 10
+    }, 
+    "oklahoma-state": {
+        "distance_from_mdl_nowhere": 180.94103606760842, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01vs64", 
+        "latitude": 36.13223, 
+        "longitude": -97.080897, 
+        "seed": 5
+    }, 
+    "oregon": {
+        "distance_from_mdl_nowhere": 1331.7028252570983, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01n6r0", 
+        "latitude": 44.035049, 
+        "longitude": -123.047357, 
+        "seed": 12
+    }, 
+    "pacific": {
+        "distance_from_mdl_nowhere": 1243.5284045803855, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/033x5p", 
+        "latitude": 37.981726, 
+        "longitude": -121.313414, 
+        "seed": 15
+    }, 
+    "pittsburgh": {
+        "distance_from_mdl_nowhere": 987.6453918683686, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01jssp", 
+        "latitude": 40.441018, 
+        "longitude": -79.960363, 
+        "seed": 8
+    }, 
+    "saint-louis": {
+        "distance_from_mdl_nowhere": 439.21932526441793, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02tz9z", 
+        "latitude": 38.629185, 
+        "longitude": -90.217432, 
+        "seed": 4
+    }, 
+    "saint-marys-ca": {
+        "distance_from_mdl_nowhere": 1287.9352911576818, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01tntf", 
+        "latitude": 37.84096, 
+        "longitude": -122.10946, 
+        "seed": 11
+    }, 
+    "san-diego-state": {
+        "distance_from_mdl_nowhere": 1128.2218418166906, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01q0kg", 
+        "latitude": 32.715329, 
+        "longitude": -117.157255, 
+        "seed": 7
+    }, 
+    "south-dakota-state": {
+        "distance_from_mdl_nowhere": 406.3250264944818, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0k0fsn3", 
+        "latitude": 44.31, 
+        "longitude": -96.79, 
+        "seed": 13
+    }, 
+    "southern": {
+        "distance_from_mdl_nowhere": 687.7150444268373, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/03x33n", 
+        "latitude": 30.52467, 
+        "longitude": -91.19003, 
+        "seed": 16
+    }, 
+    "syracuse": {
+        "distance_from_mdl_nowhere": 1198.810384101062, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/078bz", 
+        "latitude": 43.047826, 
+        "longitude": -76.143229, 
+        "seed": 4
+    }, 
+    "temple": {
+        "distance_from_mdl_nowhere": 1242.0930589564723, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01jt2w", 
+        "latitude": 39.979524, 
+        "longitude": -75.145782, 
+        "seed": 9
+    }, 
+    "ucla": {
+        "distance_from_mdl_nowhere": 1158.4939921531266, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/09f2j", 
+        "latitude": 34.070264, 
+        "longitude": -118.444056, 
+        "seed": 6
+    }, 
+    "valparaiso": {
+        "distance_from_mdl_nowhere": 635.0074171258983, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/03y5ky", 
+        "latitude": 41.461304, 
+        "longitude": -86.962409, 
+        "seed": 14
+    }, 
+    "villanova": {
+        "distance_from_mdl_nowhere": 1231.8442789056135, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01j_5k", 
+        "latitude": 40.046805, 
+        "longitude": -75.335387, 
+        "seed": 9
+    }, 
+    "virginia-commonwealth": {
+        "distance_from_mdl_nowhere": 1136.9822480161897, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0177sq", 
+        "latitude": 37.548182, 
+        "longitude": -77.453345, 
+        "seed": 5
+    }, 
+    "western-kentucky": {
+        "distance_from_mdl_nowhere": 658.8379262979905, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02t4yc", 
+        "latitude": 36.99032, 
+        "longitude": -86.443602, 
+        "seed": 16
+    }, 
+    "wichita-state": {
+        "distance_from_mdl_nowhere": 81.12516855200109, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01lnyf", 
+        "latitude": 37.7192, 
+        "longitude": -97.2931, 
+        "seed": 9
+    }, 
+    "wisconsin": {
+        "distance_from_mdl_nowhere": 562.4635050191663, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01yx1b", 
+        "latitude": 43.073052, 
+        "longitude": -89.40123, 
+        "seed": 5
+    }
+}
