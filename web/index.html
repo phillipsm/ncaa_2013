@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+<style>
+
+.states {
+  fill: #ccc;
+  stroke: #fff;
+}
+
+.symbol {
+  fill: #13df53;
+  fill-opacity: .8;
+  stroke: #fff;
+}
+
+</style>
+</head>
+<body>
+	<div id="map"></div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v0.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+
+var width = 960,
+    height = 500;
+
+var centroids_path = 'ncaa-team-centroids.json';
+
+var radius = d3.scale.sqrt()
+    .domain([0, 1e6])
+    .range([0, 10]);
+
+var path = d3.geo.path();
+
+var arc = d3.geo.greatArc();
+
+var svg = d3.select("#map").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var arcs = svg.append("g")
+    .attr("id", "arcs");
+
+queue()
+    .defer(d3.json, "us.json")
+    .defer(d3.json, centroids_path)
+    .await(ready);
+
+function ready(error, us, centroid) {
+  svg.append("path")
+      .attr("class", "states")
+      .datum(topojson.object(us, us.objects.states))
+      .attr("d", path);
+
+
+
+  svg.selectAll(".symbol")
+      .data(centroid.features.sort(function(a, b) { return b.properties.seed - a.properties.seed; }))
+    .enter().append("path")
+      .attr("class", "symbol")
+	.attr("id", function(d){ return d.id })
+      .attr("d", path.pointRadius(function(d) { return radius(1/d.properties.seed * 2500000); }));
+
+
+	var links = [];
+
+	  // Create a link between each state centroid.
+	  centroid.features.forEach(function(a) {
+	    centroid.features.forEach(function(b) {
+	      if (a !== b) {
+	        links.push({
+	          source: a.geometry.coordinates,
+	          target: b.geometry.coordinates
+	        });
+	      }
+	    });
+	  });
+
+console.log(links);
+
+	  
+
+}
+
+$(function () { 
+	// Control clicks using jquery (because I don't know how in d3)	
+	var centroids_data;
+	
+
+	$.getJSON(centroids_path, function(data) {
+		centroids_data = data;
+
+	});
+	
+	$('.symbol').live("click", function(){
+		
+		var i = $(this).attr('id') - 1;
+		$('#detail_pane').html(centroids_data.features[i].properties.name + ', ' + centroids_data.features[i].properties.seed);
+			
+    });
+	
+});
+
+</script>
+
+
+	<div id="detail_pane"></div>
+</body>
+</html>
