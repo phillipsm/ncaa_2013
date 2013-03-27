@@ -56,7 +56,7 @@ for key in data:
 	if _slugify(key['team_name']) in partial_data:
 		#print _slugify(key['team_name'])
 		slugged_team_name = _slugify(key['team_name'])
-		c.writerow([i, key['team_name'], slugged_team_name, key['team_region'], key['team_seed'], partial_data[slugged_team_name]['latitude'], partial_data[slugged_team_name]['longitude'], partial_data[slugged_team_name]['freebase'],'true'])
+		c.writerow([i, slugged_team_name, key['team_name'], key['team_region'], key['team_seed'], partial_data[slugged_team_name]['latitude'], partial_data[slugged_team_name]['longitude'], partial_data[slugged_team_name]['freebase'],'true'])
 		i = i + 1
 	else:
 		print "not found: %s" % _slugify(key['team_name'])
