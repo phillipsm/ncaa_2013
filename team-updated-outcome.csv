@@ -1,0 +1,65 @@
+teamid,slug,name,team_region,seed,latitude,longitude,freebase,alive
+0,louisville,Louisville,Midwest,1,38.216926,-85.762499,https://www.googleapis.com/freebase/v1/topic/m/0225bv,true
+1,north-carolina-at,North Carolina A&T,Midwest,16,36.072635,-79.791975,https://www.googleapis.com/freebase/v1/topic/m/02ldkf,false
+2,colorado-state,Colorado State,Midwest,8,40.5748361111,-105.080977778,https://www.googleapis.com/freebase/v1/topic/m/02d_zc,false
+3,missouri,Missouri,Midwest,9,38.933139,-92.373804,https://www.googleapis.com/freebase/v1/topic/m/0187nd,false
+4,oklahoma-state,Oklahoma State,Midwest,5,36.13223,-97.080897,https://www.googleapis.com/freebase/v1/topic/m/01vs64,false
+5,oregon,Oregon,Midwest,12,44.035049,-123.047357,https://www.googleapis.com/freebase/v1/topic/m/01n6r0,true
+6,saint-louis,Saint Louis,Midwest,4,38.629185,-90.217432,https://www.googleapis.com/freebase/v1/topic/m/02tz9z,false
+7,new-mexico-state,New Mexico State,Midwest,13,32.277755,-106.745579,https://www.googleapis.com/freebase/v1/topic/m/02jztz,false
+8,memphis,Memphis,Midwest,6,35.124799,-89.937585,https://www.googleapis.com/freebase/v1/topic/m/02y9bj,false
+9,saint-marys,Saint Mary's,Midwest,11,37.84096,-122.10946,https://www.googleapis.com/freebase/v1/topic/m/01tntf,false
+10,michigan-state,Michigan State,Midwest,3,42.724783,-84.483212,https://www.googleapis.com/freebase/v1/topic/m/01j_cy,true
+11,valparaiso,Valparaiso,Midwest,14,41.461304,-86.962409,https://www.googleapis.com/freebase/v1/topic/m/03y5ky,false
+12,creighton,Creighton,Midwest,7,41.264767,-95.946916,https://www.googleapis.com/freebase/v1/topic/m/037njl,false
+13,cincinnati,Cincinnati,Midwest,10,39.103118,-84.51202,https://www.googleapis.com/freebase/v1/topic/m/02ln0f,false
+14,duke,Duke,Midwest,2,35.994033,-78.898619,https://www.googleapis.com/freebase/v1/topic/m/0dzst,true
+15,albany,Albany,Midwest,15,42.652579,-73.756232,https://www.googleapis.com/freebase/v1/topic/m/02dq8f,false
+16,kansas,Kansas,South,1,38.958056,-95.247778,https://www.googleapis.com/freebase/v1/topic/m/015q1n,true
+17,western-kentucky,Western Kentucky,South,16,36.99032,-86.443602,https://www.googleapis.com/freebase/v1/topic/m/02t4yc,false
+18,north-carolina,North Carolina,South,8,35.9086350917,-79.0424251556,https://www.googleapis.com/freebase/v1/topic/m/0bx8pn,false
+19,villanova,Villanova,South,9,40.046805,-75.335387,https://www.googleapis.com/freebase/v1/topic/m/01j_5k,false
+20,virginia-commonwealth,Virginia Commonwealth,South,5,37.548182,-77.453345,https://www.googleapis.com/freebase/v1/topic/m/0177sq,false
+21,akron,Akron,South,12,41.07523,-81.51154,https://www.googleapis.com/freebase/v1/topic/m/02txdf,false
+22,michigan,Michigan,South,4,42.27721,-83.73818,https://www.googleapis.com/freebase/v1/topic/m/07szy,true
+23,south-dakota-state,South Dakota State,South,13,44.31,-96.79,https://www.googleapis.com/freebase/v1/topic/m/0k0fsn3,false
+24,ucla,UCLA,South,6,34.070264,-118.444056,https://www.googleapis.com/freebase/v1/topic/m/09f2j,false
+25,minnesota,Minnesota,South,11,44.983334,-93.26667,https://www.googleapis.com/freebase/v1/topic/m/025v3k,false
+26,florida,Florida,South,3,29.64833,-82.34944,https://www.googleapis.com/freebase/v1/topic/m/0j_sncb,true
+27,northwestern-state,Northwestern State,South,14,31.75004,-93.09639,https://www.googleapis.com/freebase/v1/topic/m/019tfm,false
+28,san-diego-state,San Diego State,South,7,32.715329,-117.157255,https://www.googleapis.com/freebase/v1/topic/m/01q0kg,false
+29,oklahoma,Oklahoma,South,10,35.208611,-97.445833,https://www.googleapis.com/freebase/v1/topic/m/01vs5c,false
+30,georgetown,Georgetown,South,2,38.9072,-77.0728,https://www.googleapis.com/freebase/v1/topic/m/0pspl,false
+31,florida-gulf-coast,Florida Gulf Coast,South,15,26.4625,-81.7729,https://www.googleapis.com/freebase/v1/topic/m/04zjgd,true
+32,indiana,Indiana,East,1,39.171427,-86.518602,https://www.googleapis.com/freebase/v1/topic/m/01qrb2,true
+33,james-madison,James Madison,East,16,38.431599,-78.865158,https://www.googleapis.com/freebase/v1/topic/m/0438f,false
+34,north-carolina-state,North Carolina State,East,8,35.785548,-78.67157,https://www.googleapis.com/freebase/v1/topic/m/0jkhr,false
+35,temple,Temple,East,9,39.679524,-75.145782,https://www.googleapis.com/freebase/v1/topic/m/01jt2w,false
+36,unlv,UNLV,East,5,36.10779,-115.14376,https://www.googleapis.com/freebase/v1/topic/m/01jpqb,false
+37,california,California,East,12,37.861111,-122.307917,https://www.googleapis.com/freebase/v1/topic/m/02zd460,false
+38,syracuse,Syracuse,East,4,43.047826,-76.143229,https://www.googleapis.com/freebase/v1/topic/m/078bz,true
+39,montana,Montana,East,13,46.861557,-113.98427,https://www.googleapis.com/freebase/v1/topic/m/02x9cv,false
+40,butler,Butler,East,6,39.820606,-86.170089,https://www.googleapis.com/freebase/v1/topic/m/03bnd9,false
+41,bucknell,Bucknell,East,11,40.9546,-76.8836,https://www.googleapis.com/freebase/v1/topic/m/0qlnr,false
+42,marquette,Marquette,East,3,43.038902,-87.906474,https://www.googleapis.com/freebase/v1/topic/m/037fqp,true
+43,davidson,Davidson,East,14,35.49999,-80.8453,https://www.googleapis.com/freebase/v1/topic/m/02pdhz,false
+44,illinois,Illinois,East,7,40.11661,-88.24125,https://www.googleapis.com/freebase/v1/topic/m/0220q6,false
+45,colorado,Colorado,East,10,40.010325,-105.288973,https://www.googleapis.com/freebase/v1/topic/m/01qd_r,false
+46,miami-fl,Miami (FL),East,2,25.721644,-80.279267,https://www.googleapis.com/freebase/v1/topic/m/0lyjf,true
+47,pacific,Pacific,East,15,37.981726,-121.313414,https://www.googleapis.com/freebase/v1/topic/m/033x5p,false
+48,gonzaga,Gonzaga,West,1,47.65878,-117.426047,https://www.googleapis.com/freebase/v1/topic/m/01b1mj,false
+49,southern-university,Southern University,West,16,30.52467,-91.19003,https://www.googleapis.com/freebase/v1/topic/m/03x33n,false
+50,pittsburgh,Pittsburgh,West,8,40.441018,-79.960363,https://www.googleapis.com/freebase/v1/topic/m/01jssp,false
+51,wichita-state,Wichita State,West,9,37.7192,-97.2931,https://www.googleapis.com/freebase/v1/topic/m/01lnyf,true
+52,wisconsin,Wisconsin,West,5,43.073052,-89.40123,https://www.googleapis.com/freebase/v1/topic/m/01yx1b,false
+53,mississippi,Mississippi,West,12,34.3663,-89.5368,https://www.googleapis.com/freebase/v1/topic/m/0hd7j,false
+54,kansas-state,Kansas State,West,4,39.199804,-96.581008,https://www.googleapis.com/freebase/v1/topic/m/049dk,false
+55,la-salle,La Salle,West,13,40.03925,-74.85325,https://www.googleapis.com/freebase/v1/topic/m/02yr3z,true
+56,arizona,Arizona,West,6,32.2317,-110.9519,https://www.googleapis.com/freebase/v1/topic/m/07vyf,true
+57,belmont,Belmont,West,11,36.166667,-86.783333,https://www.googleapis.com/freebase/v1/topic/m/01qdhx,false
+58,new-mexico,New Mexico,West,3,35.08389,-106.61861,https://www.googleapis.com/freebase/v1/topic/m/02482c,false
+59,harvard,Harvard,West,14,42.380327,-71.13891,https://www.googleapis.com/freebase/v1/topic/m/03ksy,false
+60,notre-dame,Notre Dame,West,7,41.70767,-86.248238,https://www.googleapis.com/freebase/v1/topic/m/012mzw,false
+61,iowa-state,Iowa State,West,10,42.028866,-93.648031,https://www.googleapis.com/freebase/v1/topic/m/03v6t,false
+62,ohio-state,Ohio State,West,2,39.999063,-83.017339,https://www.googleapis.com/freebase/v1/topic/m/05krk,true
+63,iona,Iona,West,15,40.92583,-73.7875,https://www.googleapis.com/freebase/v1/topic/m/01smn5,false
