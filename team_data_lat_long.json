@@ -210,10 +210,10 @@
         "longitude": -77.0728
     },
     "arizona": {
-        "latitude": 43.60392,
-        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0lwyk",
+        "latitude": 32.2317,
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/07vyf",
         "seed": 6,
-        "longitude": -116.20441
+        "longitude": -110.9519
     },
     "wisconsin": {
         "latitude": 43.073052,

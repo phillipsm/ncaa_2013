@@ -7,7 +7,7 @@
 	"mississippi": {"freebase": "https://www.googleapis.com/freebase/v1/topic/m/0hd7j", "seed": 12},
 	"kansas-state": {"freebase": "https://www.googleapis.com/freebase/v1/topic/m/049dk", "seed": 4},
 	"la-salle": {"freebase": "https://www.googleapis.com/freebase/v1/topic/m/02yr3z", "seed": 13},
-	"arizona": {"freebase": "https://www.googleapis.com/freebase/v1/topic/m/0lwyk", "seed": 6},
+	"arizona": {"freebase": "https://www.googleapis.com/freebase/v1/topic/m/07vyf", "seed": 6},
 	"belmont": {"freebase": "https://www.googleapis.com/freebase/v1/topic/m/01qdhx", "seed": 11},
 	"new-mexico": {"freebase": "https://www.googleapis.com/freebase/v1/topic/m/02482c", "seed": 3},
 	"harvard": {"freebase": "https://www.googleapis.com/freebase/v1/topic/m/03ksy", "seed": 14},

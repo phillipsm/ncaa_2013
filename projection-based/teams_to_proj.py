@@ -47,7 +47,7 @@ json_data.close()
 
 
 c = csv.writer(open("teams.csv", "wb"))
-c.writerow(["teamid","slug","name","team_region","seed","latitude","longitude","alive"])
+c.writerow(["teamid","slug","name","team_region","seed","latitude","longitude","freebase","alive"])
 
 
 i = 0

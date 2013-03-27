@@ -38,6 +38,8 @@ def get_slugs_and_ids(slug, list_of_teams):
 play_ins = ['liberty', 'middle-tennessee', 'long-island', 'boise-state']
 
 csv_reader = csv.reader(open("teams.csv","rb"))
+# skip the header
+csv_reader.next()
 
 teams = []
 for line in csv_reader:
@@ -64,8 +66,9 @@ for result in results:
 		to_write_csv.append([winner_id, loser_id,  "win"])
 		to_write_csv.append([loser_id, winner_id,  "loss"])
 		
-c = csv.writer(open("arcs_gen.csv", "wb"))
+c = csv.writer(open("team-updated-outcome.csv", "wb"))
 
 c.writerow(["origin","destination","outcome"])
 for arc in to_write_csv:
 	c.writerow(arc)
+	

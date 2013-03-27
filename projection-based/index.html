@@ -62,12 +62,12 @@ circle {
   </head>
   <body>
     <h2>
-      <span>U.S. commercial airports</span>, 2008<br>
-      great arcs and symbol map
+      <span></span><br>
+      NCAA Tournament, 2013, Men's
     </h2>
-    <div style="position:absolute;bottom:0;font-size:18px;">
+    <!--<div style="position:absolute;bottom:0;font-size:18px;">
       <input type="checkbox" id="voronoi"> <label for="voronoi">show Voronoi</label>
-    </div>
+    </div>-->
     <script type="text/javascript" src="d3/d3.js"></script>
     <script type="text/javascript" src="d3/d3.csv.js"></script>
     <script type="text/javascript" src="d3/d3.geo.js"></script>
@@ -131,7 +131,7 @@ d3.csv("arcs_gen.csv", function(flights) {
   });
 
 
-  d3.csv("teams.csv", function(airports) {
+  d3.csv("team-updated-outcome.csv", function(airports) {
 
     // Only consider airports with at least one flight.
     airports = airports.filter(function(airport) {
@@ -153,7 +153,7 @@ d3.csv("arcs_gen.csv", function(flights) {
     g.append("svg:path")
         .attr("class", "cell")
         .attr("d", function(d, i) { return "M" + polygons[i].join("L") + "Z"; })
-        .on("mouseover", function(d, i) { d3.select("h2 span").text(d.name); });
+        .on("mouseover", function(d, i) { d3.select("h2 span").text(d.name + ", " + d.seed + " seed"); });
 
     g.selectAll("path.arc")
         .data(function(d) { return linksByOrigin[d.teamid] || []; })

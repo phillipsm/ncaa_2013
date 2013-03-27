@@ -14,10 +14,10 @@
         "seed": 15
     }, 
     "arizona": {
-        "distance_from_mdl_nowhere": 991.2676016542586, 
-        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0lwyk", 
-        "latitude": 43.60392, 
-        "longitude": -116.20441, 
+        "distance_from_mdl_nowhere": 1011.2676016542586, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/07vyf", 
+        "latitude": 32.2317, 
+        "longitude": -110.9519, 
         "seed": 6
     }, 
     "belmont": {

@@ -1,4 +1,4 @@
-teamid,slug,name,team_region,seed,latitude,longitude,alive
+teamid,slug,name,team_region,seed,latitude,longitude,freebase,alive
 0,louisville,Louisville,Midwest,1,38.216926,-85.762499,https://www.googleapis.com/freebase/v1/topic/m/0225bv,true
 1,north-carolina-at,North Carolina A&T,Midwest,16,36.072635,-79.791975,https://www.googleapis.com/freebase/v1/topic/m/02ldkf,true
 2,colorado-state,Colorado State,Midwest,8,40.5748361111,-105.080977778,https://www.googleapis.com/freebase/v1/topic/m/02d_zc,true
@@ -55,7 +55,7 @@ teamid,slug,name,team_region,seed,latitude,longitude,alive
 53,mississippi,Mississippi,West,12,34.3663,-89.5368,https://www.googleapis.com/freebase/v1/topic/m/0hd7j,true
 54,kansas-state,Kansas State,West,4,39.199804,-96.581008,https://www.googleapis.com/freebase/v1/topic/m/049dk,true
 55,la-salle,La Salle,West,13,40.03925,-75.15325,https://www.googleapis.com/freebase/v1/topic/m/02yr3z,true
-56,arizona,Arizona,West,6,43.60392,-116.20441,https://www.googleapis.com/freebase/v1/topic/m/0lwyk,true
+56,arizona,Arizona,West,6,32.2317,-110.9519,https://www.googleapis.com/freebase/v1/topic/m/07vyf,true
 57,belmont,Belmont,West,11,36.166667,-86.783333,https://www.googleapis.com/freebase/v1/topic/m/01qdhx,true
 58,new-mexico,New Mexico,West,3,35.08389,-106.61861,https://www.googleapis.com/freebase/v1/topic/m/02482c,true
 59,harvard,Harvard,West,14,42.380327,-71.13891,https://www.googleapis.com/freebase/v1/topic/m/03ksy,true
