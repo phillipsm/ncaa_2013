@@ -5,13 +5,13 @@
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0dzst",
         "seed": 2
     },
-    "albany-ny": {
+    "albany": {
         "latitude": 42.652579,
         "longitude": -73.756232,
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02dq8f",
         "seed": 15
     },
-    "nevada-las-vegas": {
+    "unlv": {
         "latitude": 36.10779,
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01jpqb",
         "seed": 5,
@@ -29,7 +29,7 @@
         "seed": 15,
         "longitude": -81.7729
     },
-    "saint-marys-ca": {
+    "saint-marys": {
         "latitude": 37.84096,
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01tntf",
         "seed": 11,
@@ -167,11 +167,11 @@
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0225bv",
         "seed": 1
     },
-    "boise-state": {
-        "latitude": 43.60392,
-        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0lwyk",
-        "seed": 13,
-        "longitude": -116.20441
+    "la-salle": {
+        "latitude": 40.03925, 
+        "longitude": -75.15325, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02yr3z", 
+        "seed": 13
     },
     "butler": {
         "latitude": 39.820606,
@@ -245,7 +245,7 @@
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/05krk",
         "seed": 2
     },
-    "southern": {
+    "southern-university": {
         "latitude": 30.52467,
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/03x33n",
         "seed": 16,

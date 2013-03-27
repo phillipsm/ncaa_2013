@@ -6,7 +6,7 @@
         "longitude": -81.51154, 
         "seed": 12
     }, 
-    "albany-ny": {
+    "albany": {
         "distance_from_mdl_nowhere": 1316.3857343179857, 
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02dq8f", 
         "latitude": 42.652579, 
@@ -27,11 +27,11 @@
         "longitude": -86.783333, 
         "seed": 11
     }, 
-    "boise-state": {
-        "distance_from_mdl_nowhere": 991.2676016542586, 
-        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0lwyk", 
-        "latitude": 43.60392, 
-        "longitude": -116.20441, 
+    "la-salle": {
+        "distance_from_mdl_nowhere": 1374.2676016542586, 
+        "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02yr3z", 
+        "latitude": 40.03925, 
+        "longitude": -75.15325, 
         "seed": 13
     }, 
     "bucknell": {
@@ -251,7 +251,7 @@
         "longitude": -113.98427, 
         "seed": 13
     }, 
-    "nevada-las-vegas": {
+    "unlv": {
         "distance_from_mdl_nowhere": 936.8797529992045, 
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01jpqb", 
         "latitude": 36.10779, 
@@ -356,7 +356,7 @@
         "longitude": -90.217432, 
         "seed": 4
     }, 
-    "saint-marys-ca": {
+    "saint-marys": {
         "distance_from_mdl_nowhere": 1287.9352911576818, 
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01tntf", 
         "latitude": 37.84096, 
@@ -377,7 +377,7 @@
         "longitude": -96.79, 
         "seed": 13
     }, 
-    "southern": {
+    "southern-university": {
         "distance_from_mdl_nowhere": 687.7150444268373, 
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/03x33n", 
         "latitude": 30.52467, 
