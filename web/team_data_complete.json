@@ -322,6 +322,12 @@
                     "losing_score": 72,
                     "round": 3,
                     "winning_score": 74
+                },
+                {
+                    "loser": "Miami (FL)",
+                    "losing_score": 61,
+                    "round": 4,
+                    "winning_score": 71
                 }
             ]
         },
@@ -520,13 +526,20 @@
         "team_region": "Midwest"
     },
     {
-        "alive": "true",
+        "alive": "false",
         "distance_from_mdl_nowhere": 1375.3234347580762,
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/0lyjf",
         "latitude": 25.721644,
         "longitude": -80.279267,
         "match_ups": {
-            "loses": [],
+            "loses": [
+	            {
+	                "winner": "Marquette",
+	                "losing_score": 61,
+	                "round": 4,
+	                "winning_score": 71
+	            }
+					 ],
             "wins": [
                 {
                     "loser": "Pacific",
@@ -651,6 +664,12 @@
                     "losing_score": 75,
                     "round": 3,
                     "winning_score": 78
+                },
+                {
+                    "loser": "Arizona",
+                    "losing_score": 70,
+                    "round": 4,
+                    "winning_score": 73
                 }
             ]
         },
@@ -750,13 +769,20 @@
         "team_region": "East"
     },
     {
-        "alive": "true",
+        "alive": "false",
         "distance_from_mdl_nowhere": 637.7308585668735,
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/01qrb2",
         "latitude": 39.171427,
         "longitude": -86.518602,
         "match_ups": {
-            "loses": [],
+            "loses": [
+	            {
+	                "winner": "Syracuse",
+	                "losing_score": 50,
+	                "round": 4,
+	                "winning_score": 61
+	            }
+					 ],
             "wins": [
                 {
                     "loser": "James Madison",
@@ -871,13 +897,20 @@
         "team_region": "South"
     },
     {
-        "alive": "true",
+        "alive": "false",
         "distance_from_mdl_nowhere": 1011.2676016542586,
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/07vyf",
         "latitude": 32.2317,
         "longitude": -110.9519,
         "match_ups": {
-            "loses": [],
+            "loses": [
+	            {
+	                "winner": "Ohio State",
+	                "losing_score": 70,
+	                "round": 4,
+	                "winning_score": 73
+	            }
+					 ],
             "wins": [
                 {
                     "loser": "Belmont",
@@ -1376,6 +1409,12 @@
                     "losing_score": 60,
                     "round": 3,
                     "winning_score": 66
+                },
+                {
+                    "loser": "Indiana",
+                    "losing_score": 50,
+                    "round": 4,
+                    "winning_score": 61
                 }
             ]
         },
@@ -1386,13 +1425,20 @@
         "team_region": "East"
     },
     {
-        "alive": "true",
+        "alive": "false",
         "distance_from_mdl_nowhere": 1374.2676016542587,
         "freebase": "https://www.googleapis.com/freebase/v1/topic/m/02yr3z",
         "latitude": 40.33925,
         "longitude": -75.15325,
         "match_ups": {
-            "loses": [],
+            "loses": [
+	            {
+	                "winner": "Wichita State",
+	                "losing_score": 58,
+	                "round": 4,
+	                "winning_score": 72
+	            }
+				    ],
             "wins": [
                 {
                     "loser": "Boise State",
@@ -1492,6 +1538,12 @@
                     "losing_score": 70,
                     "round": 3,
                     "winning_score": 76
+                },
+                {
+                    "loser": "La Salle",
+                    "losing_score": 58,
+                    "round": 4,
+                    "winning_score": 72
                 }
             ]
         },

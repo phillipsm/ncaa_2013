@@ -95,3 +95,11 @@ origin,destination,outcome
 40,42,loss
 46,44,win
 44,46,loss
+38,32,win
+32,38,loss
+42,46,win
+46,42,loss
+51,55,win
+55,51,loss
+62,56,win
+56,62,loss
