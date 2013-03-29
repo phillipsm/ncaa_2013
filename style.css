@@ -1,100 +1,115 @@
+*{  
+	margin:0;
+	padding:0;
+	border-width:0;
+}
+
 body {
-  font: 300 36px "Helvetica Neue";
-  height: 640px;
-  margin: 80px 160px 80px 160px;
-  overflow: hidden;
-  position: relative;
-  width: 960px;
+	font: 15px "Helvetica Neue";
 }
 
-a:link, a:visited {
-  color: #777;
-  text-decoration: none;
+#states path {
+	fill: #ccc;
+	stroke: #fff;
 }
 
-a:hover {
-  color: #666;
+path.arc {
+	pointer-events: none;
+	fill: none;
+	stroke: #000;
+	display: none;
 }
 
-blockquote {
-  margin: 0;
+path.arcw {
+	pointer-events: none;
+	fill: none;
+	stroke: #42c326;
+	display: none;
 }
 
-blockquote:before {
-  content: "“";
-  position: absolute;
-  left: -.4em;
+path.arcl {
+	pointer-events: none;
+	fill: none;
+	stroke: #d65240;
+	display: none;
 }
 
-blockquote:after {
-  content: "”";
-  position: absolute;
+path.cell {
+	fill: none;
+	pointer-events: all;
 }
 
-body > ul {
-  margin: 0;
-  padding: 0;
+.circlew {
+	fill: #42c326;
+	fill-opacity: .8;
+	stroke: #fff;
 }
 
-h1 {
-  font-size: 64px;
+.circlel {
+	fill: #d65240;
+	fill-opacity: .8;
+	stroke: #fff;
 }
 
-h1, h2, h3 {
-  font-weight: inherit;
-  margin: 0;
+circle {
 }
 
-h2, h3 {
-  text-align: right;
-  font-size: inherit;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+#cells.voronoi path.cell {
+	stroke: #c15bb1;
 }
 
-h2 {
-  font-size: 24px;
-  position: absolute;
+#detail_pane {
+	position: absolute;
+	width: 370px;
+	height:220px;
+	top:530px;
+	left: 90px;
 }
 
-h3 {
-  bottom: -20px;
-  font-size: 18px;
+#cells g:hover path.arc {
+	display: inherit;
 }
 
-.invert {
-  background: #1f1f1f;
-  color: #dcdccc;
+#detail_pane #team_name {
+	font-size:27px;
 }
 
-.invert h2, .invert h3 {
-  color: #7f9f7f;
+#detail_pane #team_region {
+	color:gray;
+	margin-bottom:20px;
 }
 
-.string, .regexp {
-  color: #f39;
+#detail_pane #team_wins {
+	color:#42c326;
 }
 
-.keyword {
-  color: #00c;
+#detail_pane #team_loses {
+	color:#d65240;
 }
 
-.comment {
-  color: #777;
-  font-style: oblique;
+#detail_pane p {
+	line-height: 130%;
+	margin: 0;
 }
 
-.number {
-  color: #369;
+#map {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-top: 25px;
+	margin-left: 30px;
+	width: 1088px;
+	height: 680px;
 }
 
-.class, .special {
-  color: #1181B8;
+#map_title {
+	position: absolute;
+	width: 500px;
+	top: 660px;
+	right: 300px;
 }
 
-body > svg {
-  position: absolute;
-  top: -80px;
-  left: -160px;
+#map_title h2 {
+	font-size:30px;
+	font-weight: 300;
 }
