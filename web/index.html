@@ -1,114 +1,163 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-<style>
-
-.states {
-  fill: #ccc;
-  stroke: #fff;
-}
-
-.symbol {
-  fill: #13df53;
-  fill-opacity: .8;
-  stroke: #fff;
-}
-
-</style>
-</head>
-<body>
-	<div id="map"></div>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/topojson.v0.min.js"></script>
-<script src="http://d3js.org/queue.v1.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-
-var width = 960,
-    height = 500;
-
-var centroids_path = 'ncaa-team-centroids.json';
-
-var radius = d3.scale.sqrt()
-    .domain([0, 1e6])
-    .range([0, 10]);
-
-var path = d3.geo.path();
-
-var arc = d3.geo.greatArc();
-
-var svg = d3.select("#map").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
-var arcs = svg.append("g")
-    .attr("id", "arcs");
-
-queue()
-    .defer(d3.json, "us.json")
-    .defer(d3.json, centroids_path)
-    .await(ready);
-
-function ready(error, us, centroid) {
-  svg.append("path")
-      .attr("class", "states")
-      .datum(topojson.object(us, us.objects.states))
-      .attr("d", path);
-
-
-
-  svg.selectAll(".symbol")
-      .data(centroid.features.sort(function(a, b) { return b.properties.seed - a.properties.seed; }))
-    .enter().append("path")
-      .attr("class", "symbol")
-	.attr("id", function(d){ return d.id })
-      .attr("d", path.pointRadius(function(d) { return radius(1/d.properties.seed * 2500000); }));
-
-
-	var links = [];
-
-	  // Create a link between each state centroid.
-	  centroid.features.forEach(function(a) {
-	    centroid.features.forEach(function(b) {
-	      if (a !== b) {
-	        links.push({
-	          source: a.geometry.coordinates,
-	          target: b.geometry.coordinates
-	        });
-	      }
-	    });
-	  });
-
-console.log(links);
-
-	  
-
-}
-
-$(function () { 
-	// Control clicks using jquery (because I don't know how in d3)	
-	var centroids_data;
-	
-
-	$.getJSON(centroids_path, function(data) {
-		centroids_data = data;
-
-	});
-	
-	$('.symbol').live("click", function(){
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+		<title>Map of the March Madness Basketball / 2013</title>
 		
-		var i = $(this).attr('id') - 1;
-		$('#detail_pane').html(centroids_data.features[i].properties.name + ', ' + centroids_data.features[i].properties.seed);
-			
-    });
+		<meta charset="utf-8">
+		<meta name="description" content="Explore, geographically, the teams playing in the 2013 NCAA March Madness Basketball Tournament.">
+		
+		<meta name="twitter:card" content="summary">
+	    <meta name="twitter:creator" content="@labratmatt">
+	    <meta name="twitter:url" content="http://phillipsm.github.com/ncaa_2013/">
+	    <meta name="twitter:title" content="Map of March Madness / 2013">
+		<meta name="twitter:description" content="Explore, geographically, the teams playing in the 2013 NCAA March Madness Basketball Tournament.">
+	    <meta name="twitter:image" content="http://phillipsm.github.com/ncaa_2013/images/tourn-map.png">
 	
+	    <meta property="og:title" content="Map of March Madness / 2013"/>
+	    <meta property="og:type" content="website"/>
+	    <meta property="og:url" content="http://phillipsm.github.com/ncaa_2013/"/>
+	    <meta property="og:image" content="http://phillipsm.github.com/ncaa_2013/images/tourn-map.png"/>
+	    <meta property="og:site_name" content="Matt Phillips, github"/>
+	    <meta property="og:description"
+	          content="Explore, geographically, the teams playing in the 2013 NCAA March Madness Basketball Tournament."/>
+	
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+	<div id="map"></div>
+	<div id="detail_pane">
+		<div id="team_name"></div>
+		<div id="team_region"></div>
+		<div id="team_wins"></div>
+		<div id="team_loses"></div>
+	</div>
+    <div id="map_title"><h2>NCAA March Madness / 2013 / Men</h2></div>
+    <!--<div style="position:absolute;bottom:0;font-size:18px;">
+      <input type="checkbox" id="voronoi"> <label for="voronoi">show Voronoi</label>
+    </div>-->
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <script type="text/javascript" src="d3/d3.csv.js"></script>
+    <script type="text/javascript" src="d3/d3.geo.js"></script>
+    <script type="text/javascript" src="d3/d3.geom.js"></script>
+    <script type="text/javascript">
+		// The below is a reworked version of http://mbostock.github.com/d3/talk/20111116/airports.html
+		
+var w = 1088,
+    h = 680;
+
+var projection = d3.geo.azimuthal()
+    .mode("equidistant")
+    .origin([-98, 38])
+    .scale(1260)
+    .translate([440, 300]);
+
+var path = d3.geo.path()
+    .projection(projection);
+
+var svg = d3.select("#map").insert("svg:svg", "h2")
+    .attr("width", w)
+    .attr("height", h);
+
+var states = svg.append("svg:g")
+    .attr("id", "states");
+
+var circles = svg.append("svg:g")
+    .attr("id", "circles");
+
+var cells = svg.append("svg:g")
+    .attr("id", "cells");
+
+
+d3.select("input[type=checkbox]").on("change", function() {
+  cells.classed("voronoi", this.checked);
 });
 
-</script>
+d3.json("us-states.json", function(collection) {
+  states.selectAll("path")
+      .data(collection.features)
+    .enter().append("svg:path")
+      .attr("d", path);
+});
 
+d3.csv("arcs_gen.csv", function(matchups) {
+  var linksByOrigin = {},
+      countByTeam = {},
+      locationByTeam = {},
+      positions = [];
 
-	<div id="detail_pane"></div>
-</body>
+  var arc = d3.geo.greatArc()
+      .source(function(d) { return locationByTeam[d.source]; })
+      .target(function(d) { return locationByTeam[d.target]; });
+
+  matchups.forEach(function(matchup) {
+    var origin = matchup.origin,
+        destination = matchup.destination,
+        links = linksByOrigin[origin] || (linksByOrigin[origin] = []);
+    links.push({source: origin, target: destination, outcome:matchup.outcome});
+    countByTeam[origin] = (countByTeam[origin] || 0) + 1;
+    countByTeam[destination] = (countByTeam[destination] || 0) + 1;
+  });
+
+  d3.json("team_data_complete.json", function(teams) {
+
+    // Only consider teams with at least one matchup.
+    teams = teams.filter(function(team) {
+      if (countByTeam[team.team_id]) {
+        var location = [+team.longitude, +team.latitude];
+        locationByTeam[team.team_id] = location;
+        positions.push(projection(location));
+        return true;
+      }
+    });
+
+    // Compute the Voronoi diagram of teams' projected positions.
+    var polygons = d3.geom.voronoi(positions);
+
+    var g = cells.selectAll("g")
+        .data(teams)
+      .enter().append("svg:g");
+
+    g.append("svg:path")
+        .attr("class", "cell")
+        .attr("d", function(d, i) { return "M" + polygons[i].join("L") + "Z"; })
+        .on("mouseover", function(d, i) {
+			d3.select("#team_name").text(d.name);
+			d3.select("#team_region").text(d.team_region + " region, " + d.seed + " seed");
+			var win_text = "";
+			d.match_ups.wins.forEach(function(loser) {
+				win_text = win_text + "<p>Won in round " + loser.round + " to " + loser.loser + ", " + loser.winning_score + " to " + loser.losing_score + '</p>';
+		  	});
+			
+			d3.select("#team_wins").html(win_text);
+			
+			var lose_text = "";
+			d.match_ups.loses.forEach(function(winner) {
+				lose_text = lose_text + "<p>Lost in round " + winner.round + " to " + winner.winner + ", " + winner.losing_score + " to " + winner.winning_score + '</p>';
+		  	});
+
+			d3.select("#team_loses").html(lose_text);
+		});
+
+    g.selectAll("path.arc")
+        .data(function(d) { return linksByOrigin[d.team_id] || []; })
+		.enter().append("svg:path")
+        .attr("class", function(d){if (d.outcome == 'win') {return 'arc arcw';} else {return 'arc arcl';};})
+        .attr("d", function(d) { return path(arc(d)); });
+
+    circles.selectAll("circle")
+        .data(teams)
+      .enter().append("svg:circle")
+		.attr("class", function(d){if (d.alive == 'true') {return 'circlew circle';} else {return 'circlel circle';};})
+        .attr("cx", function(d, i) { return positions[i][0]; })
+        .attr("cy", function(d, i) { return positions[i][1]; })
+        .attr("r", function(d, i) { return 10; })
+        .sort(function(a, b) { return countByTeam[b.team_id] - countByTeam[a.team_id]; });
+
+  });
+});
+    </script>
+  </body>
 </html>

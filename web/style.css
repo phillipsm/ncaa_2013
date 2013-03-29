@@ -1,0 +1,115 @@
+*{  
+	margin:0;
+	padding:0;
+	border-width:0;
+}
+
+body {
+	font: 15px "Helvetica Neue";
+}
+
+#states path {
+	fill: #ccc;
+	stroke: #fff;
+}
+
+path.arc {
+	pointer-events: none;
+	fill: none;
+	stroke: #000;
+	display: none;
+}
+
+path.arcw {
+	pointer-events: none;
+	fill: none;
+	stroke: #42c326;
+	display: none;
+}
+
+path.arcl {
+	pointer-events: none;
+	fill: none;
+	stroke: #d65240;
+	display: none;
+}
+
+path.cell {
+	fill: none;
+	pointer-events: all;
+}
+
+.circlew {
+	fill: #42c326;
+	fill-opacity: .8;
+	stroke: #fff;
+}
+
+.circlel {
+	fill: #d65240;
+	fill-opacity: .8;
+	stroke: #fff;
+}
+
+circle {
+}
+
+#cells.voronoi path.cell {
+	stroke: #c15bb1;
+}
+
+#detail_pane {
+	position: absolute;
+	width: 370px;
+	height:220px;
+	top:530px;
+	left: 90px;
+}
+
+#cells g:hover path.arc {
+	display: inherit;
+}
+
+#detail_pane #team_name {
+	font-size:27px;
+}
+
+#detail_pane #team_region {
+	color:gray;
+	margin-bottom:20px;
+}
+
+#detail_pane #team_wins {
+	color:#42c326;
+}
+
+#detail_pane #team_loses {
+	color:#d65240;
+}
+
+#detail_pane p {
+	line-height: 130%;
+	margin: 0;
+}
+
+#map {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-top: 25px;
+	margin-left: 30px;
+	width: 1088px;
+	height: 680px;
+}
+
+#map_title {
+	position: absolute;
+	width: 500px;
+	top: 660px;
+	right: 300px;
+}
+
+#map_title h2 {
+	font-size:30px;
+	font-weight: 300;
+}
